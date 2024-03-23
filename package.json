@@ -1,0 +1,54 @@
+{
+  "name": "exercitationemmaxime",
+  "version": "1.7.1",
+  "description": "Arkane-enabled Web3 Provider for the web",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "unpkg": "dist/web3-arkane-provider.js",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build-ts": "npx tsc -p .",
+    "build": "npm run clean && npm run build-js && npm run build-ts",
+    "build-js": "npx webpack --mode production",
+    "test": "mocha --timeout 20000",
+    "typedoc": "npx typedoc --out './docs' './src' --excludeExternals --target 'ES5' --theme 'minimal' --hideGenerator"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MayeSchuppe/exercitationemmaxime.git"
+  },
+  "keywords": [
+    "voluptate",
+    "hd",
+    "eos",
+    "mnemonic",
+    "aspernatur",
+    "qui",
+    "truffle"
+  ],
+  "author": "DexterKonopelski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MayeSchuppe/exercitationemmaxime.git/issues"
+  },
+  "homepage": "https://github.com/MayeSchuppe/exercitationemmaxime.git",
+  "dependencies": {
+    "@0x/subproviders": "^4.1.0",
+    "@arkane-network/arkane-connect": "1.15.0",
+    "molestiassaepe": "^1.0.0",
+    "omnisinventore": "^1.0.0",
+    "suntid": "^1.0.0",
+    "veleligendi": "^1.0.0",
+    "web3": "^0.20.7",
+    "web3-provider-engine": "^14.2.0"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "^5.2.1",
+    "mocha": "^6.1.4",
+    "ts-loader": "^5.3.3",
+    "typedoc": "^0.14.2",
+    "typescript": "^3.2.2",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1"
+  }
+}
